@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Attendify</title>
+<link rel="stylesheet" type="text/css" id="applicationStylesheet" href="date_picker_css.css"/>
+
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Google Fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/bootstrap-responsive.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" 
+integrity="sha512-mSYUmp1HYZDFaVKK//63EcZq4iFWFjxSL+Z3T/aCt4IO9Cejm03q3NKKYN6pFQzY0SBOr8h+eCIAZHPXcpZaNw==" crossorigin="anonymous" />
+
+
+<!-- JQuery -->
+<script data-require="jquery@*" data-semver="3.1.1" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script data-require="materialize.css@*" data-semver="0.97.8" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+<!-- Bootstrap tooltips-->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script> 
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js" 
+integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker-en-CA.min.js" 
+integrity="sha512-XyW6VyuUyLXiWM3BtbdTto6mXYFO9P1J3qO2GY1toAld5aLXhkNkLBQXqQoZm8Je86cCdDZn7ZG9ZQPbIWN60g==" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+
+	<div>
+		<div class="row">
+		  <div class="col-4" id="col1">
+			  <div class="row">
+				<div class="col" id="day">
+					Monday
+				</div>
+			  </div>
+			  <div class="row">
+				<div class="col" id="date">
+					23
+				</div>
+			  </div>
+			  <div class="row">
+				<div class="col" id="month">
+					November
+				</div>
+			  </div>
+			  <div class="row">
+				<div class="col" id="year">
+					2020
+				</div>
+			  </div>
+		  </div>
+		  <div class="col-8" id="col2">
+			<div cla="row">
+				<div class="col" id="head_name">
+					Attendify
+				</div>
+			</div>
+			<div class="row">
+				<div class="col" id="dateselect">
+
+					<div id="input-container">
+						<input placeholder="Pick a date" type="text" id="input">
+						<button  class="datepicker" id="icon" >
+							<svg  xmlns="http://www.w3.org/2000/svg" width="45" height="35" viewBox="0 0 53.195 48">
+							<g id="calendar" transform="translate(0 -25)">
+							  <path id="Path_1" data-name="Path 1" d="M53.195,69.675v34.493a4.681,4.681,0,0,1-4.675,4.675H4.675A4.681,4.681,0,0,1,0,104.169V69.675A4.681,4.681,0,0,1,4.675,65H48.519A4.681,4.681,0,0,1,53.195,69.675Z" transform="translate(0 -35.844)" fill="#eef4ff"/>
+							  <path id="Path_2" data-name="Path 2" d="M282.6,69.675v34.493a4.681,4.681,0,0,1-4.675,4.675H256V65h21.922A4.681,4.681,0,0,1,282.6,69.675Z" transform="translate(-229.403 -35.844)" fill="#d9e6fc"/>
+							  <path id="Path_3" data-name="Path 3" d="M53.195,69.675v7.688a1.559,1.559,0,0,1-1.558,1.558H1.558A1.559,1.559,0,0,1,0,77.364V69.675A4.681,4.681,0,0,1,4.675,65H48.519A4.681,4.681,0,0,1,53.195,69.675Z" transform="translate(0 -35.844)" fill="#dd5958"/>
+							  <path id="Path_4" data-name="Path 4" d="M282.6,69.675v7.688a1.559,1.559,0,0,1-1.558,1.558H256V65h21.922A4.681,4.681,0,0,1,282.6,69.675Z" transform="translate(-229.403 -35.844)" fill="#d8225b"/>
+							  <path id="Path_5" data-name="Path 5" d="M82.558,36.429A1.558,1.558,0,0,1,81,34.87V26.558a1.558,1.558,0,0,1,3.117,0V34.87A1.558,1.558,0,0,1,82.558,36.429Z" transform="translate(-72.584 0)" fill="#ffe278"/>
+							  <path id="Path_6" data-name="Path 6" d="M244.117,26.558V34.87a1.558,1.558,0,1,1-3.117,0V26.558a1.558,1.558,0,0,1,3.117,0Z" transform="translate(-215.961 0)" fill="#ffe278"/>
+							  <path id="Path_7" data-name="Path 7" d="M257.558,26.558V34.87A1.559,1.559,0,0,1,256,36.429V25A1.559,1.559,0,0,1,257.558,26.558Z" transform="translate(-229.403 0)" fill="#ffb454"/>
+							  <path id="Path_8" data-name="Path 8" d="M402.558,36.429A1.558,1.558,0,0,1,401,34.87V26.558a1.558,1.558,0,0,1,3.117,0V34.87A1.558,1.558,0,0,1,402.558,36.429Z" transform="translate(-359.338 0)" fill="#ffb454"/>
+							  <g id="Group_1" data-name="Group 1" transform="translate(10.078 48.273)">
+								<path id="Path_9" data-name="Path 9" d="M101.883,252.117H98.558a1.558,1.558,0,1,1,0-3.117h3.325a1.558,1.558,0,0,1,0,3.117Z" transform="translate(-97 -249)" fill="#425796"/>
+								<path id="Path_10" data-name="Path 10" d="M101.883,316.117H98.558a1.558,1.558,0,1,1,0-3.117h3.325a1.558,1.558,0,1,1,0,3.117Z" transform="translate(-97 -306.351)" fill="#425796"/>
+								<path id="Path_11" data-name="Path 11" d="M101.883,380.117H98.558a1.558,1.558,0,1,1,0-3.117h3.325a1.558,1.558,0,1,1,0,3.117Z" transform="translate(-97 -363.701)" fill="#425796"/>
+								<path id="Path_12" data-name="Path 12" d="M231.442,250.558a1.559,1.559,0,0,1-1.558,1.558h-3.325a1.558,1.558,0,0,1,0-3.117h3.325A1.559,1.559,0,0,1,231.442,250.558Z" transform="translate(-211.701 -249)" fill="#425796"/>
+							  </g>
+							  <path id="Path_13" data-name="Path 13" d="M259.221,250.558a1.559,1.559,0,0,1-1.558,1.558H256V249h1.662A1.559,1.559,0,0,1,259.221,250.558Z" transform="translate(-229.403 -200.727)" fill="#283758"/>
+							  <path id="Path_14" data-name="Path 14" d="M231.442,314.558a1.559,1.559,0,0,1-1.558,1.558h-3.325a1.558,1.558,0,1,1,0-3.117h3.325A1.559,1.559,0,0,1,231.442,314.558Z" transform="translate(-201.623 -258.078)" fill="#425796"/>
+							  <path id="Path_15" data-name="Path 15" d="M257.662,316.117H256V313h1.662a1.558,1.558,0,1,1,0,3.117Z" transform="translate(-229.403 -258.078)" fill="#283758"/>
+							  <path id="Path_16" data-name="Path 16" d="M231.442,378.558a1.559,1.559,0,0,1-1.558,1.558h-3.325a1.558,1.558,0,1,1,0-3.117h3.325A1.559,1.559,0,0,1,231.442,378.558Z" transform="translate(-201.623 -315.429)" fill="#425796"/>
+							  <path id="Path_17" data-name="Path 17" d="M259.221,378.558a1.559,1.559,0,0,1-1.558,1.558H256V377h1.662A1.559,1.559,0,0,1,259.221,378.558Z" transform="translate(-229.403 -315.429)" fill="#283758"/>
+							  <path id="Path_18" data-name="Path 18" d="M357.883,252.117h-3.325a1.558,1.558,0,1,1,0-3.117h3.325a1.558,1.558,0,1,1,0,3.117Z" transform="translate(-316.325 -200.727)" fill="#283758"/>
+							  <path id="Path_19" data-name="Path 19" d="M357.883,316.117h-3.325a1.558,1.558,0,1,1,0-3.117h3.325a1.558,1.558,0,1,1,0,3.117Z" transform="translate(-316.325 -258.078)" fill="#283758"/>
+							  <path id="Path_20" data-name="Path 20" d="M357.883,380.117h-3.325a1.558,1.558,0,1,1,0-3.117h3.325a1.558,1.558,0,1,1,0,3.117Z" transform="translate(-316.325 -315.429)" fill="#283758"/>
+							</g>
+						  </svg>
+						  </button>
+					  </div>
+					
+				</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<button class="button">
+							Mark as Working Day
+						</button>
+
+					</div>
+				</div>	
+		    </div>
+	    </div>
+    </div>
+
+
+
+
+		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+	<script type="text/javascript" src="date_picker_js.js"></script>
+</body>
+</html>
